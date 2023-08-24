@@ -21,5 +21,34 @@ a {
   color: red;
 }
 
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  
+  button {
+    display: table;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+    font: var(--font);
+    font-weight: bold;
+    padding: 22px 40px;
+    background-color: var(--btn-color);
+    overflow: hidden;
+    margin: 24px;
+
+    &:hover {
+      background: linear-gradient(135deg, #e66465, #9198e5);
+    }
+  }
+}
+
+.error-message {
+  text-align: center;
+  color: red;
+  font-size: 20px;
+}
+
 
 
