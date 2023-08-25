@@ -1,20 +1,20 @@
 import React from 'react';
 import {useLocation} from "react-router-dom";
-import CourseValue from "./CourseValue.jsx";
+import CourseTicket from "./CourseTicket.jsx";
 
 function Details() {
 
     const location = useLocation()
-    const { courseValue } = location.state
+    const { courseTicket } = location.state
 
     return (
         <>
             <h1>Course Detail</h1>
 
-            <CourseValue
-                courseValue={courseValue}
+            <CourseTicket
+                courseTicket={courseTicket}
                 showLink={false}
-                key={courseValue.shortName}
+                key={courseTicket.shortName}
             />
         </>
     );
